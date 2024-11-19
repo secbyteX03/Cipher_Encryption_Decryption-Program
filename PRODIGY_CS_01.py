@@ -52,9 +52,9 @@ def is_strong_password(password):
 
 
 def main():
-    print("=" * 85)
+    print("=" * 90)
     print("🔐 Welcome to the Caesar Cipher Program Encryption and Decryption Python program 🔐")
-    print("=" * 85)
+    print("=" * 90)
 
     while True:
         print("\nOptions: \n1. Encrypt\n2. Decrypt\n3. Exit")
@@ -90,15 +90,15 @@ def main():
                     print("⚠️ Please enter a valid integer for the shift value.")
                     continue
 
-                    # Password protection
-                    while True:
-                        password = input("Set your encryption password: ").strip()
-                        is_valid, validation_message = is_strong_password(password)
-                        if not is_valid:
-                            print(f"⚠️ {validation_message}")
-                        else:
-                            break  # Exit loop if password is valid
-
+            # Password protection
+            while True:
+                password = input("Set your encryption password: ").strip()
+                is_valid, validation_message = is_strong_password(password)
+                if not is_valid:
+                    print(f"⚠️ {validation_message}")
+                else:
+                    break  # Exit loop if password is valid
+# Now performing some encryption on the words input
             # Perform encryption
             encrypted_message = caesar_cipher(plaintext_message, shift_value, "encrypt")
             encrypted_storage[encrypted_message] = {"shift": shift_value, "password": password}
@@ -106,7 +106,7 @@ def main():
             print("=" * 50)
             print(f"Encrypted Message: {encrypted_message}")
             print("=" * 50)
-
+# Now performing some decryption on the words input
         elif choice == '2':  # Decryption
             encrypted_message = input("\nEnter the message to decrypt: ").strip()
             if encrypted_message not in encrypted_storage:
@@ -134,3 +134,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
