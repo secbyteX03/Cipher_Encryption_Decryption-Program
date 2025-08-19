@@ -2,7 +2,7 @@
 
 A secure Python implementation of the Caesar Cipher algorithm with password protection and encryption storage capabilities.
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Features](#features)
 - [Requirements](#requirements)
@@ -57,9 +57,9 @@ A secure Python implementation of the Caesar Cipher algorithm with password prot
 
 ### Example Session:
 ```
-==========================================================
+=======================================================================================
 🔐 Welcome to the Caesar Cipher Program Encryption and Decryption Python program 🔐
-==========================================================
+=======================================================================================
 
 Options: 
 1. Encrypt
